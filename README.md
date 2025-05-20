@@ -6,28 +6,38 @@
 ![Coverage](coverage.svg)
 
 ## Запуск проекта
+### Установка зависимостей
 ```bash
-# Установка зависимостей
-pip install -r requirements.txt
+  pip install -r requirements.txt
+```
 
-# Запуск сервера
-uvicorn src.main:app --reload
+### Запуск сервера
+```bash
+  uvicorn src.main:app --reload
 ```
 
 ## Запуск тестов
+
+### Все тесты
 ```bash
-# Все тесты
-pytest 
-
-# Подробный вывод тестов
-pytest -v
-
-# Генерация HTML-отчета
-pytest --cov=src --cov-report=html
-
-# Нагрузочное тестирование
-locust -f tests/locustfile.py
+  pytest 
 ```
+
+### Подробный вывод тестов
+```bash
+  pytest -v 
+```
+
+### Генерация HTML-отчета
+```bash
+  pytest --cov=src --cov-report=html 
+```
+
+### Нагрузочное тестирование
+```bash
+  locust -f tests/locustfile.py 
+```
+
 
 ## Структура проекта
 ```
